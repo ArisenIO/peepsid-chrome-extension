@@ -3,18 +3,11 @@
   "version": "0.1.1",
   "license": "MIT",
   "author": {
-    "name": "block.one",
-    "url": "https://block.one"
+    "name": "arisen.network",
+    "url": "https://arisen.network"
   },
   "contributors": [
-    "Mike Creque",
-    "Cody Douglass",
-    "Lucas Fonseca",
-    "Mike Manfredi",
-    "Jonathan Pratt",
-    "Tara Tritt",
-    "Ryan Wiesjahn",
-    "Bill Woodward"
+    "shikhar srivastava"
   ],
   "private": true,
   "sideEffects": false,
