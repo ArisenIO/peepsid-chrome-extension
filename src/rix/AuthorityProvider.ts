@@ -1,4 +1,4 @@
-import { ApiInterfaces } from 'eosjs'
+import { ApiInterfaces } from '@arisencore/js'
 
 export default class AuthorityProvider implements ApiInterfaces.AuthorityProvider {
   private publicKeys: string[]

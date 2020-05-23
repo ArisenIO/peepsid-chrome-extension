@@ -1,6 +1,6 @@
-import { SignatureProviderRequestEnvelope } from 'eosjs-signature-provider-interface'
+import { SignatureProviderRequestEnvelope } from 'arisen-signature-provider-interface'
 
-import { TransactionInfo } from 'eos/Transaction'
+import { TransactionInfo } from 'rix/Transaction'
 
 export default interface DappRequest {
   transactionInfo?: TransactionInfo

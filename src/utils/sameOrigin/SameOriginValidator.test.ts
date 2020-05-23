@@ -8,7 +8,7 @@ import {
   SignatureProviderRequestEnvelope,
   AppManifest,
   SecurityExclusions,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import SameOriginValidator from 'utils/sameOrigin/SameOriginValidator'
 import * as SecurityExclusionHelpers from 'utils/manifest/SecurityExclusion'

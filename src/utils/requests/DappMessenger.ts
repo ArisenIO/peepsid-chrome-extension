@@ -1,6 +1,6 @@
 import {
   SignatureProviderResponseEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 export class DappMessenger {
   private sentRequestIds: string[] = []

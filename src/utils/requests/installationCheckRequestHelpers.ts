@@ -3,7 +3,7 @@ import {
   SignatureProviderRequestEnvelope,
   SignatureProviderRequest,
   SignatureProviderResponse,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 export const INSTALLATION_CHECK_ACTION = 'installationCheck'
 

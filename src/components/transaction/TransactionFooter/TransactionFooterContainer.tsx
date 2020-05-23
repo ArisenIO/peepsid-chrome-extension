@@ -4,12 +4,12 @@ import {
   ChainInfo,
   SignatureProviderRequestEnvelope,
   SignatureProviderRequest,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import TransactionFooterView from 'components/transaction/TransactionFooter/TransactionFooterView'
 import AppState from 'store/AppState'
 import { DappInfo } from 'utils/manifest/DappInfo'
-import { TransactionInfo } from 'eos/Transaction'
+import { TransactionInfo } from 'rix/Transaction'
 
 interface Props {
   dappInfo: DappInfo

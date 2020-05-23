@@ -1,14 +1,14 @@
-# EOSIO Reference Chrome Extension Authenticator App <!-- omit in toc -->
-A Chrome extension which demonstrates how users could sign transactions from EOSIO apps using various EOSIO labs tools.
+# ARISEN Reference Chrome Extension Authenticator App <!-- omit in toc -->
+A Chrome extension which demonstrates how users could sign transactions from ARISEN apps using various ARISEN labs tools.
 
-![EOSIO Labs](https://img.shields.io/badge/EOSIO-Labs-5cb3ff.svg)
+![ARISEN Labs](https://img.shields.io/badge/ARISEN-Labs-5cb3ff.svg)
 
-## About EOSIO Labs <!-- omit in toc -->
+## About ARISEN Labs <!-- omit in toc -->
 
-EOSIO Labs repositories are experimental.  Developers in the community are encouraged to use EOSIO Labs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Block.one, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
+ARISEN Labs repositories are experimental.  Developers in the community are encouraged to use ARISEN Labs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Block.one, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
 
 ## Overview <!-- omit in toc -->
-The EOSIO ecosystem is rich with existing wallets providing users the ability to sign transactions on the EOSIO blockchain. However, we have identified some limitations and possible areas for improvement to the overall user experience:
+The ARISEN ecosystem is rich with existing wallets providing users the ability to sign transactions on the ARISEN blockchain. However, we have identified some limitations and possible areas for improvement to the overall user experience:
 * Providing support for only Mainnet accounts and transactions.
 * Lack of support for displaying Ricardian Contracts.
 * Lack of transparency and verification of application's identity and intentions, especially during transaction signing.
@@ -16,8 +16,8 @@ The EOSIO ecosystem is rich with existing wallets providing users the ability to
 This Reference Implementation serves an example for wallet developers as possible solutions to the problems stated above from the Chrome desktop browser. The Chrome extension provides the following as reference:
 
 * It provides seamless multi-network support.
-* It securely stores private keys and signs transactions, showing a richly formatted [Ricardian Contract](https://github.com/EOSIO/ricardian-spec), which provide users with a human readable explanation of the action(s) the app is proposing and allows them to accept the contract’s terms.
-* By following the [Manifest Specification](https://github.com/EOSIO/manifest-spec), it shows metadata about apps to end users as they are signing transactions, which provides users with a better sense of trust for the app they are interacting with. It also runs various transaction pre-flight security checks comparing the contents of a transaction request with what apps have declared about themselves.
+* It securely stores private keys and signs transactions, showing a richly formatted [Ricardian Contract](https://github.com/ARISENIO/ricardian-spec), which provide users with a human readable explanation of the action(s) the app is proposing and allows them to accept the contract’s terms.
+* By following the [Manifest Specification](https://github.com/ARISENIO/manifest-spec), it shows metadata about apps to end users as they are signing transactions, which provides users with a better sense of trust for the app they are interacting with. It also runs various transaction pre-flight security checks comparing the contents of a transaction request with what apps have declared about themselves.
 
 ## Table of Contents <!-- omit in toc -->
 - [Required Tools](#Required-Tools)
@@ -59,21 +59,21 @@ yarn build
 2. Install the extension in your browser by following step 2 [here](https://support.google.com/chrome/a/answer/2714278?hl=en) and select the `build` folder.
 
 ## Integrating with Apps
-The Chrome extension follows the [EOSIO Authentication Transport Protocol Specification](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec). There is some configuration needed in the integrating app, and there are a few different ways to interact with the Chrome extension from an integrating app:
-1. Make sure your app follows the [Manifest Specification v0.7.0](https://github.com/EOSIO/manifest-spec/tree/v0.7.0).
-1. Make sure your application's Ricardian Contracts follow the [Ricardian Specification v0.2.0](https://github.com/EOSIO/ricardian-spec/tree/v0.2.0).
+The Chrome extension follows the [ARISEN Authentication Transport Protocol Specification](https://github.com/ARISENIO/arisen-authentication-transport-protocol-spec). There is some configuration needed in the integrating app, and there are a few different ways to interact with the Chrome extension from an integrating app:
+1. Make sure your app follows the [Manifest Specification v0.7.0](https://github.com/ARISENIO/manifest-spec/tree/v0.7.0).
+1. Make sure your application's Ricardian Contracts follow the [Ricardian Specification v0.2.0](https://github.com/ARISENIO/ricardian-spec/tree/v0.2.0).
 1. Choose a solution for interacting with the Chrome extension:
-   1. (Easiest) Use the [Universal Authenticator Library](https://github.com/EOSIO/universal-authenticator-library).
-      - UAL with the [EOSIO Reference Authenticator](https://github.com/EOSIO/ual-eosio-reference-authenticator) will detect if the Chrome extension is installed, and allows for easy integration. Read the documentation on the [Tropical example app](https://github.com/EOSIO/tropical-example-web-app) to learn how to use UAL.
-   1. Use the [EOSJS Signature Provider for desktop browsers](https://github.com/EOSIO/eosjs-window-message-signature-provider-interface).
-      - This class implements the [EOSJS Signature Provider interface](https://github.com/EOSIO/eosjs-signature-provider-interface). The documentation describes how to utilize it directly with EOSJS.
+   1. (Easiest) Use the [Universal Authenticator Library](https://github.com/ARISENIO/universal-authenticator-library).
+      - UAL with the [ARISEN Reference Authenticator](https://github.com/ARISENIO/ual-arisen-reference-authenticator) will detect if the Chrome extension is installed, and allows for easy integration. Read the documentation on the [Tropical example app](https://github.com/ARISENIO/tropical-example-web-app) to learn how to use UAL.
+   1. Use the [EOSJS Signature Provider for desktop browsers](https://github.com/ARISENIO/eosjs-window-message-signature-provider-interface).
+      - This class implements the [EOSJS Signature Provider interface](https://github.com/ARISENIO/arisen-signature-provider-interface). The documentation describes how to utilize it directly with EOSJS.
    1. Directly use the [Window Messaging API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage).
-      - The integrating app will need to post requests and listen for responses following the [EOSIO Authentication Transport Protocol Specification's](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec) envelope formats.
+      - The integrating app will need to post requests and listen for responses following the [ARISEN Authentication Transport Protocol Specification's](https://github.com/ARISENIO/arisen-authentication-transport-protocol-spec) envelope formats.
 
 ## Getting Started with an Example Web App
-If you want to start out by test driving the EOSIO Reference Chrome Extension Authenticator App for yourself, we recommend checking out our [Tropical Example web app](https://github.com/EOSIO/tropical-example-web-app/). Tropical Example is a mock web application for renting properties and provides instructions and a script for setting up a local chain bootstrapped with all of the necessary, compliant contracts for making the experience work.
+If you want to start out by test driving the ARISEN Reference Chrome Extension Authenticator App for yourself, we recommend checking out our [Tropical Example web app](https://github.com/ARISENIO/tropical-example-web-app/). Tropical Example is a mock web application for renting properties and provides instructions and a script for setting up a local chain bootstrapped with all of the necessary, compliant contracts for making the experience work.
 
-Specifically, follow the instructions under the [Running Tropical Example](https://github.com/EOSIO/tropical-example-web-app/#running-tropical-example) header. (Of course, we recommend reading the rest of the README there too, which will provide more context around how the pieces work together to provide the user with a secure and positive user experience.)
+Specifically, follow the instructions under the [Running Tropical Example](https://github.com/ARISENIO/tropical-example-web-app/#running-tropical-example) header. (Of course, we recommend reading the rest of the README there too, which will provide more context around how the pieces work together to provide the user with a secure and positive user experience.)
 
 ## Usage
 * [Create a Passphrase](#how-to-create-a-passphrase)
@@ -130,7 +130,7 @@ The Chrome extension uses the [Chrome storage](https://developer.chrome.com/exte
 1. `sync` storage is used for storing Auths (encrypted private keys) and the user's hashed passphrase.
    - On first use, a user chooses a passphrase which will be used to encrypt private keys. A hashed version of the passphrase is stored to later check for a correct passphrase. The non-hashed version of the passphrase is _never_ stored.
    - All private keys are encrypted before storage with the passphrase chosen by the user.
-1. `local` storage is used as a buffer to move data from the background script to the extension window, as described in the [Data Flow](#data-flow) section above. It also stores developer settings such as the [insecure mode settings](https://github.com/EOSIO/eosio-reference-chrome-extension-authenticator-app#insecure-mode).
+1. `local` storage is used as a buffer to move data from the background script to the extension window, as described in the [Data Flow](#data-flow) section above. It also stores developer settings such as the [insecure mode settings](https://github.com/ARISENIO/arisen-reference-chrome-extension-authenticator-app#insecure-mode).
 
 ### Storage Listeners
 The main extension window and the settings page are separate React apps, so changes to the state of one doesn't automatically propagate to the other. Because of this, the states of the React apps need to update when the Chrome storage changes. This is done by adding listeners to the [onChanged event on Chrome storage](https://developer.chrome.com/extensions/storage#event-onChanged). Here is a quick explanation:
@@ -142,13 +142,13 @@ The main extension window and the settings page are separate React apps, so chan
 The Chrome extension uses the [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) API for encrypting and decrypting keys. Web workers run scripts in background threads without interfering with the UI. Encryption and decryption rely on CPU intensive operations which hang up the extension UI. This performance hit is especially noticeable when users have several keys imported and they are updating the passphrase used to encrypt those keys. The keys need to all be decrypted with the old passphrase and then re-encrypted with the new passphrase, resulting in a frozen UI for several seconds. Using the web workers API allows the UI to continue functioning while encryption and decryption runs in a background thread.
 
 ### Manifest Specification
-The Chrome extension adheres to the [Manifest Specification](https://github.com/EOSIO/manifest-spec).
-All [checks](https://github.com/EOSIO/manifest-spec#how-it-works) described in the Manifest Specification are validated in the Chrome Extension.
+The Chrome extension adheres to the [Manifest Specification](https://github.com/ARISENIO/manifest-spec).
+All [checks](https://github.com/ARISENIO/manifest-spec#how-it-works) described in the Manifest Specification are validated in the Chrome Extension.
 
 #### Assert Action
-As part of the Manifest Specification, the Chrome extension will generate a [`eosio.assert::require` action](https://github.com/EOSIO/eosio-reference-chrome-extension-authenticator-app/blob/develop/src/contracts/eosio.assert.abi.json#L52) with the following parameters:
-   * `chain_params_hash`: Hash of the chain information from the [Application Metadata](https://github.com/EOSIO/manifest-spec#application-metadata-specification) for the chain defined in the request envelope.
-   * `manifest_id`: Hash of the [Manifest](https://github.com/EOSIO/manifest-spec#application-manifest-specification) for the chain defined in the request envelope.
+As part of the Manifest Specification, the Chrome extension will generate a [`arisen.assert::require` action](https://github.com/ARISENIO/arisen-reference-chrome-extension-authenticator-app/blob/develop/src/contracts/arisen.assert.abi.json#L52) with the following parameters:
+   * `chain_params_hash`: Hash of the chain information from the [Application Metadata](https://github.com/ARISENIO/manifest-spec#application-metadata-specification) for the chain defined in the request envelope.
+   * `manifest_id`: Hash of the [Manifest](https://github.com/ARISENIO/manifest-spec#application-manifest-specification) for the chain defined in the request envelope.
    * `actions`: An array of actions whitelisted in the Manifest.
    * `abi_hashes`: An array of the hashed abis included in the request envelope.
 
@@ -173,7 +173,7 @@ To enable `insecure mode` follow the steps below for both the Chrome extension a
 1. Enter the application URL in the input field and click the "Save" button.
 
 ##### Application
-The integrating application must add the [securityExclusions](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec#securityexclusions-optional) options to the [Request Envelope](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec#request-envelope) as part of the [EOSIO Authentication Transport Protocol Specification](https://github.com/EOSIO/eosio-authentication-transport-protocol-spec).
+The integrating application must add the [securityExclusions](https://github.com/ARISENIO/arisen-authentication-transport-protocol-spec#securityexclusions-optional) options to the [Request Envelope](https://github.com/ARISENIO/arisen-authentication-transport-protocol-spec#request-envelope) as part of the [ARISEN Authentication Transport Protocol Specification](https://github.com/ARISENIO/arisen-authentication-transport-protocol-spec).
 
 ## Contributing
 
@@ -187,6 +187,6 @@ The integrating application must add the [securityExclusions](https://github.com
 
 ## Important
 
-See LICENSE for copyright and license terms.  Block.one makes its contribution on a voluntary basis as a member of the EOSIO community and is not responsible for ensuring the overall performance of the software or any related applications.  We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions.  Any reference to any third party or third-party product, service or other resource is not an endorsement or recommendation by Block.one.  We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.  Block.one, EOSIO, EOSIO Labs, EOS, the heptahedron and associated logos are trademarks of Block.one.
+See LICENSE for copyright and license terms.  Block.one makes its contribution on a voluntary basis as a member of the ARISEN community and is not responsible for ensuring the overall performance of the software or any related applications.  We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions.  Any reference to any third party or third-party product, service or other resource is not an endorsement or recommendation by Block.one.  We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.  Block.one, ARISEN, ARISEN Labs, EOS, the heptahedron and associated logos are trademarks of Block.one.
 
 Wallets and related components are complex software that require the highest levels of security.  If incorrectly built or used, they may compromise users’ private keys and digital assets. Wallet applications and related components should undergo thorough security evaluations before being used.  Only experienced developers should work with this software.

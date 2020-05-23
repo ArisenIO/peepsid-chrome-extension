@@ -1,5 +1,5 @@
 import AppState from 'store/AppState'
-import { isAssertRequireAction, TransactionInfo } from 'eos/Transaction'
+import { isAssertRequireAction, TransactionInfo } from 'rix/Transaction'
 
 export const requestEnvelopeSelector = (state: AppState) => state.request.data.requestEnvelope
 export const transactionInfoSelector = (state: AppState) => state.request.data.transactionInfo

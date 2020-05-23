@@ -5,7 +5,7 @@ import * as manifestProviderMocks from 'utils/manifest/__mocks__/ManifestProvide
 import {
   SignatureProviderRequestEnvelope,
   SignatureProviderResponseEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import BackgroundMessageHandler from './BackgroundMessageHandler'
 import * as ManifestProviderImport from 'utils/manifest/ManifestProvider'

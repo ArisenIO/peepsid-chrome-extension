@@ -1,6 +1,6 @@
-import * as eosjs from 'eosjs'
+import * as eosjs from '@arisencore/js'
 
-import AbiProvider from 'eos/AbiProvider'
+import AbiProvider from 'rix/AbiProvider'
 
 describe('AbiProvider', () => {
   let abiProvider: AbiProvider

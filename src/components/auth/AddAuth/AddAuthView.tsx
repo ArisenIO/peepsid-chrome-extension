@@ -39,7 +39,7 @@ const AddAuthView: React.SFC<Props> = ({
             <h1 className='add-auth-title'>Add Auth</h1>
             <p className='add-auth-info'>
               Securely store additional Authenticators below by pasting in Private Keys.
-              Importing your Accounts into the EOSIO Reference Chrome Extension
+              Importing your Accounts into the ARISEN Reference Chrome Extension
               Authenticator App will allow you to transact seamlessly.
             </p>
           </div>

@@ -2,7 +2,7 @@
 import 'babel-polyfill'
 import {
   SignatureProviderRequestEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import BackgroundMessageHandler from 'background/BackgroundMessageHandler'
 

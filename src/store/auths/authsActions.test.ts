@@ -1,7 +1,7 @@
 import * as authStorageMocks from 'utils/storage/__mocks__/AuthStorage.mock'
 import * as encrypter from 'utils/__mocks__/encrypter.mock'
 
-import * as ecc from 'eosjs-ecc'
+import * as ecc from '@arisencore/ecc'
 import * as hashjs from 'hash.js'
 
 import * as actions from 'store/auths/authsActions'

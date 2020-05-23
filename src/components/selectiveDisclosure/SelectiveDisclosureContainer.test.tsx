@@ -10,7 +10,7 @@ import {
   Authorizer,
   ErrorCodes,
   SignatureProviderRequestEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import {
   SelectiveDisclosureContainer,

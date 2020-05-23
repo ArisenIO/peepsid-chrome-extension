@@ -4,7 +4,7 @@ import * as dappMessengerMocks from 'utils/__mocks__/DappMessenger.mock'
 
 import * as React from 'react'
 import { shallow, ShallowWrapper } from 'enzyme'
-import * as ecc from 'eosjs-ecc'
+import * as ecc from '@arisencore/ecc'
 import * as hashjs from 'hash.js'
 
 import { AddAuthContainer, mapDispatchToProps, ERROR_MESSAGES } from 'components/auth/AddAuth/AddAuthContainer'

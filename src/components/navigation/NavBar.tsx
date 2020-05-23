@@ -64,7 +64,7 @@ export const NavBar: React.SFC<Props> = ({
 
   const renderLeftIcon = () => {
     if (renderLogo) {
-      return <h1 className='navbar-logo'>EOSIO Reference Authenticator</h1>
+      return <h1 className='navbar-logo'>ARISEN Reference Authenticator</h1>
     } else {
       return renderBackButton()
     }

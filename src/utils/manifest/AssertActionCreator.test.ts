@@ -3,12 +3,12 @@ import * as payloadData from '__mocks__/data.mock'
 import * as manifestData from 'utils/manifest/__mocks__/manifestData.mock'
 
 import * as hash from 'hash.js'
-import * as eosjs from 'eosjs'
-import { SignatureProviderRequestEnvelope } from 'eosjs-signature-provider-interface'
+import * as eosjs from '@arisencore/js'
+import { SignatureProviderRequestEnvelope } from 'arisen-signature-provider-interface'
 import { TextDecoder, TextEncoder } from 'text-encoding'
 
-import * as getAssertAbiHex from 'contracts/eosio.assert.abi.hex'
-import { TransactionInfo } from 'eos/Transaction'
+import * as getAssertAbiHex from 'contracts/arisen.assert.abi.hex'
+import { TransactionInfo } from 'rix/Transaction'
 import AssertActionCreator from 'utils/manifest/AssertActionCreator'
 import { DappInfo } from 'utils/manifest/DappInfo'
 import { clone } from 'utils/helpers'
@@ -45,7 +45,7 @@ describe('AssertActionCreator', () => {
     assertActionCreator = new AssertActionCreator()
 
     const assertAction = {
-      account: 'eosio.assert',
+      account: 'arisen.assert',
       name: 'require',
       authorization: [
         {
@@ -86,7 +86,7 @@ describe('AssertActionCreator', () => {
       },
       {
         abi: 'hex3',
-        accountName: 'eosio.assert',
+        accountName: 'arisen.assert',
       },
     ]
 
@@ -153,7 +153,7 @@ describe('AssertActionCreator', () => {
 
     it('returns the assert action with unique abi hashes only', () => {
       const newAccountAction = {
-        account: 'eosio',
+        account: 'arisen',
         name: 'newaccount',
         authorization: [
           {
@@ -173,12 +173,12 @@ describe('AssertActionCreator', () => {
         {
           // tslint:disable-next-line:max-line-length
           abi: 'hex3',
-          accountName: 'eosio',
+          accountName: 'arisen',
         },
       )
 
       const assertAction = {
-        account: 'eosio.assert',
+        account: 'arisen.assert',
         name: 'require',
         authorization: [
           {
@@ -202,7 +202,7 @@ describe('AssertActionCreator', () => {
             },
             {
               action: 'newaccount',
-              contract: 'eosio',
+              contract: 'arisen',
             },
           ],
           chain_params_hash: 'SHA256Hash',
@@ -216,7 +216,7 @@ describe('AssertActionCreator', () => {
       expectedRequestEnvelope.request.transactionSignature.abis.splice(2, 0,
         {
           abi: 'hex3',
-          accountName: 'eosio',
+          accountName: 'arisen',
         },
       )
 

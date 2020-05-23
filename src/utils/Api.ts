@@ -1,14 +1,14 @@
-import { Api as EosApi, JsonRpc, RpcInterfaces, Serialize } from 'eosjs'
-import { JsSignatureProvider } from 'eosjs/dist/eosjs-jssig'
+import { Api as EosApi, JsonRpc, RpcInterfaces, Serialize } from '@arisencore/js'
+import { JsSignatureProvider } from '@arisencore/js/dist/rixjs-jssig'
 import {
   HexAbi,
   arrayToHex,
   Transaction as SignedTransaction,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
-import AbiProvider from 'eos/AbiProvider'
-import AuthorityProvider from 'eos/AuthorityProvider'
-import { TransactionInfo, AbiInfo } from 'eos/Transaction'
+import AbiProvider from 'rix/AbiProvider'
+import AuthorityProvider from 'rix/AuthorityProvider'
+import { TransactionInfo, AbiInfo } from 'rix/Transaction'
 
 export default class Api {
   private rpc: JsonRpc

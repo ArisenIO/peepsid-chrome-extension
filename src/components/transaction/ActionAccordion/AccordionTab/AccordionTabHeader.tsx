@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { RicardianContract } from 'ricardian-template-toolkit'
-import { Action } from 'eos/Transaction'
+import { Action } from 'rix/Transaction'
 import './AccordionTabHeader.css'
 
 import Checkbox from 'components/shared/Checkbox'

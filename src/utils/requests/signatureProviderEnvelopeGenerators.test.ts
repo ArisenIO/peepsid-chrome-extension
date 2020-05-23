@@ -3,7 +3,7 @@ import * as data from '__mocks__/data.mock'
 import {
   SignatureProviderResponseEnvelope,
   SignatureProviderEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import './signatureProviderEnvelopeGenerators'
 import {

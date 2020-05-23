@@ -6,7 +6,7 @@ import {
   envelopeDataType,
   EnvelopeDataType,
   SignatureProviderEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import {
   checkIfInstallationType,

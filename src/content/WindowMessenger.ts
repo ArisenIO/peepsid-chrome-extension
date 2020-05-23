@@ -6,7 +6,7 @@ import {
   packEnvelope,
   ErrorCodes,
   SignatureProviderRequestEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import { createErrorResponseEnvelope } from 'utils/requests/signatureProviderEnvelopeGenerators'
 import {

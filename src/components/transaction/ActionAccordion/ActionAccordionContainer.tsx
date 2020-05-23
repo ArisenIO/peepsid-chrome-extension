@@ -3,10 +3,10 @@ import { connect } from 'react-redux'
 import {
   SignatureProviderRequest,
   SignatureProviderRequestEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import ActionAccordionView from './ActionAccordionView'
-import { TransactionInfo, AbiInfo } from 'eos/Transaction'
+import { TransactionInfo, AbiInfo } from 'rix/Transaction'
 import AppState from 'store/AppState'
 import Api from 'utils/Api'
 import { shouldValidate } from 'utils/manifest/SecurityExclusion'

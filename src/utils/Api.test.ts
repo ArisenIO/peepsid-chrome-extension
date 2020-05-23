@@ -1,11 +1,11 @@
 import * as data from '__mocks__/data.mock'
 
-import * as eosjs from 'eosjs'
-import * as eosjsSignatureProvider from 'eosjs/dist/eosjs-jssig'
-import * as SPI from 'eosjs-signature-provider-interface'
+import * as eosjs from '@arisencore/js'
+import * as eosjsSignatureProvider from '@arisencore/js/dist/rixjs-jssig'
+import * as SPI from 'arisen-signature-provider-interface'
 
 import Api from 'utils/Api'
-import { TransactionInfo } from 'eos/Transaction'
+import { TransactionInfo } from 'rix/Transaction'
 
 describe('api', () => {
   let api: Api

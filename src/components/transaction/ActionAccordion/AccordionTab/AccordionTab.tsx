@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { RicardianContract } from 'ricardian-template-toolkit'
-import { Action } from 'eos/Transaction'
+import { Action } from 'rix/Transaction'
 import './AccordionTab.css'
 
 import AccordionTabHeader from 'components/transaction/ActionAccordion/AccordionTab/AccordionTabHeader'

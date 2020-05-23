@@ -1,4 +1,4 @@
-import { privateToPublic } from 'eosjs-ecc'
+import { privateToPublic } from '@arisencore/ecc'
 import { sha256 } from 'hash.js'
 
 import { Dispatch } from 'store/storeHelpers'
@@ -7,7 +7,7 @@ import AppState, { DelayedRemovable } from 'store/AppState'
 import Auth from 'utils/Auth'
 import AuthStorage from 'utils/storage/AuthStorage'
 import { encrypt } from 'utils/encrypter'
-import { isValidPrivate } from 'eosjs-ecc'
+import { isValidPrivate } from '@arisencore/ecc'
 
 const REMOVE_DELAY = 6000
 

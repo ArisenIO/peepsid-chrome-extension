@@ -3,7 +3,7 @@ import { RicardianContractFactory } from 'ricardian-template-toolkit'
 
 import './ActionAccordionView.css'
 
-import { TransactionInfo, Action } from 'eos/Transaction'
+import { TransactionInfo, Action } from 'rix/Transaction'
 import AccordionTab from 'components/transaction/ActionAccordion/AccordionTab/AccordionTab'
 import Contract from 'components/transaction/ActionAccordion/Contract/Contract'
 import generateActionID from 'utils/generateActionID'

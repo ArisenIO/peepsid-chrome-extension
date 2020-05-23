@@ -5,14 +5,14 @@ import {
   SecurityExclusions,
   HexAbi,
   Transaction as SignedTransaction,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import {
   SignatureProviderRequestWithInstallationCheck,
   SignatureProviderRequestEnvelopeWithInstallationCheck,
   SignatureProviderResponseEnvelopeWithInstallationCheck,
 } from 'utils/requests/installationCheckRequestHelpers'
-import { TransactionInfo, Action } from 'eos/Transaction'
+import { TransactionInfo, Action } from 'rix/Transaction'
 
 export const actions: Action[] = [
   {
@@ -50,7 +50,7 @@ export const actions: Action[] = [
 ]
 
 export const requireAction: Action = {
-  account: 'eosio.assert',
+  account: 'arisen.assert',
   name: 'require',
   authorization: [
     {

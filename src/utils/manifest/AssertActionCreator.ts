@@ -1,18 +1,18 @@
 import { sha256 } from 'hash.js'
-import { Api as EosApi, JsonRpc, Serialize } from 'eosjs'
-import { JsSignatureProvider } from 'eosjs/dist/eosjs-jssig'
+import { Api as EosApi, JsonRpc, Serialize } from '@arisencore/js'
+import { JsSignatureProvider } from '@arisencore/js/dist/rixjs-jssig'
 import {
   SignatureProviderRequestEnvelope,
   ChainManifest,
   hexToArray,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
-import { TransactionInfo, Action, PermissionLevel } from 'eos/Transaction'
-import getAssertAbiHex from 'contracts/eosio.assert.abi.hex'
+import { TransactionInfo, Action, PermissionLevel } from 'rix/Transaction'
+import getAssertAbiHex from 'contracts/arisen.assert.abi.hex'
 import { DappInfo } from 'utils/manifest/DappInfo'
 import { clone } from 'utils/helpers'
 // tslint:disable-next-line:no-var-requires
-const assertAbi = require('../../contracts/eosio.assert.abi.json')
+const assertAbi = require('../../contracts/arisen.assert.abi.json')
 
 export interface TransactionBundle {
   transactionInfo: TransactionInfo
@@ -24,7 +24,7 @@ interface AssertActionParams {
   dappInfo: DappInfo
 }
 
-const ACCOUNT_NAME = 'eosio.assert'
+const ACCOUNT_NAME = 'arisen.assert'
 const ACTION_NAME = 'require'
 
 export default class AssertActionCreator {

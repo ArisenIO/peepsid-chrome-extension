@@ -1,10 +1,10 @@
 {
-  "short_name": "EOSIO-Reference-Authenticator",
-  "name": "EOSIO Reference Authenticator",
+  "short_name": "ARISEN-Reference-Authenticator",
+  "name": "ARISEN Reference Authenticator",
   "version": "0.1.1",
   "manifest_version": 2,
   "browser_action": {
-    "default_title": "EOSIO Reference Authenticator"
+    "default_title": "ARISEN Reference Authenticator"
   },
   "options_page": "index.html#options",
   "permissions": ["storage", "tabs", "clipboardWrite"],

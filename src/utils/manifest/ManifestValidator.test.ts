@@ -11,12 +11,12 @@ import {
   AppManifest,
   ChainManifest,
   AppMetadata
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import ManifestValidator, { ERROR_MESSAGES, FETCH_RESPONSE_ERROR } from 'utils/manifest/ManifestValidator'
 import * as SecurityExclusionHelpers from 'utils/manifest/SecurityExclusion'
 import { DappInfo } from 'utils/manifest/DappInfo'
-import { TransactionInfo } from 'eos/Transaction'
+import { TransactionInfo } from 'rix/Transaction'
 import { clone } from 'utils/helpers'
 
 describe('ManifestValidator', () => {

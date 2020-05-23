@@ -1,7 +1,7 @@
-import { Abi } from 'eosjs/dist/eosjs-rpc-interfaces'
+import { Abi } from '@arisencore/js/dist/rixjs-rpc-interfaces'
 
-const EOSIO_ASSERT_ACCOUNT = 'eosio.assert'
-const EOSIO_ASSERT_ACTION = 'require'
+const ARISEN_ASSERT_ACCOUNT = 'arisen.assert'
+const ARISEN_ASSERT_ACTION = 'require'
 
 export interface TransactionInfo {
   actions: Action[]
@@ -25,5 +25,5 @@ export interface AbiInfo {
 }
 
 export const isAssertRequireAction = (action: Action) => {
-  return action.account === EOSIO_ASSERT_ACCOUNT && action.name === EOSIO_ASSERT_ACTION
+  return action.account === ARISEN_ASSERT_ACCOUNT && action.name === ARISEN_ASSERT_ACTION
 }

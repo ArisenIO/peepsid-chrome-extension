@@ -1,4 +1,4 @@
-import AuthorityProvider from 'eos/AuthorityProvider'
+import AuthorityProvider from 'rix/AuthorityProvider'
 
 describe('AuthorityProvider', () => {
   let authorityProvider: AuthorityProvider

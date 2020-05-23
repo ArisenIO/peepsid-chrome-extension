@@ -2,7 +2,7 @@ import {
   SignatureProviderRequestEnvelope,
   Manifest,
   SecurityExclusions,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import ManifestProvider from 'utils/manifest/ManifestProvider'
 import { shouldValidate } from 'utils/manifest/SecurityExclusion'

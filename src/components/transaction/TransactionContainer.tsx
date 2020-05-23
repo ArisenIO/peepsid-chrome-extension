@@ -4,12 +4,12 @@ import {
   SignatureProviderRequestEnvelope,
   SignatureProviderRequest,
   ErrorCodes,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 
 import TransactionRoutes from 'components/transaction/TransactionRoutes'
 import Auth from 'utils/Auth'
-import { TransactionInfo } from 'eos/Transaction'
+import { TransactionInfo } from 'rix/Transaction'
 import getDefaultDappMessenger, { DappMessenger } from 'utils/requests/DappMessenger'
 import getDefaultWindowManager, { WindowManager } from 'utils/WindowManager'
 import Api from 'utils/Api'

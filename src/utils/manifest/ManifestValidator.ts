@@ -6,9 +6,9 @@ import {
   instanceOfAppManifest,
   ChainInfo,
   ContractAction,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
-import { TransactionInfo, Action } from 'eos/Transaction'
+import { TransactionInfo, Action } from 'rix/Transaction'
 import { shouldValidate } from 'utils/manifest/SecurityExclusion'
 import ManifestProvider from 'utils/manifest/ManifestProvider'
 import AssertActionCreator, { TransactionBundle } from 'utils/manifest/AssertActionCreator'

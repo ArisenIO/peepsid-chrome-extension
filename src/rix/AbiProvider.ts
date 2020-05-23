@@ -1,5 +1,5 @@
-import { ApiInterfaces, Serialize } from 'eosjs'
-import { HexAbi } from 'eosjs-signature-provider-interface'
+import { ApiInterfaces, Serialize } from '@arisencore/js'
+import { HexAbi } from 'arisen-signature-provider-interface'
 
 export default class AbiProvider implements ApiInterfaces.AbiProvider {
   private hexAbiInfos: any[]

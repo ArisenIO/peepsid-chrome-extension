@@ -5,7 +5,7 @@ import {
   ErrorCodes,
   envelopeDataType,
   EnvelopeDataType,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import App from 'App'
 import RoutePath from 'constants/routePath'

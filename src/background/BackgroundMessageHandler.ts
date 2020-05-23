@@ -1,7 +1,7 @@
 import {
   SignatureProviderRequestEnvelope,
   SignatureProviderResponseEnvelope,
-} from 'eosjs-signature-provider-interface'
+} from 'arisen-signature-provider-interface'
 
 import getDefaultWindowManager from 'utils/WindowManager'
 import ActionHandler from 'background/ActionHandler'

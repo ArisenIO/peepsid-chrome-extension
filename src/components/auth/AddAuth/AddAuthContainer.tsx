@@ -2,7 +2,7 @@ import * as React from 'react'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { sha256 } from 'hash.js'
-import { isValidPrivate, privateToPublic } from 'eosjs-ecc'
+import { isValidPrivate, privateToPublic } from '@arisencore/ecc'
 
 import AddAuthView from 'components/auth/AddAuth/AddAuthView'
 import { AddAuthFormInputs } from 'components/auth/AddAuth/AddAuthView'
