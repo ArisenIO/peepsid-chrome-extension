@@ -19,7 +19,7 @@
     "@arisencore/ecc": "^1.0.1",
     "arisen-signature-provider-interface": "^0.0.1",
     "hash.js": "1.1.5",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.1.0",
